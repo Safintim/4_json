@@ -12,6 +12,6 @@
 python pprint_json.py <path to file>
 ```
 
-## Project Goals
+## Цели проекта
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Код создан в учебных целях. В рамках учебного курса по веб-разработке  - [DEVMAN.org](https://devman.org)
