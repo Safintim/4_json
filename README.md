@@ -1,20 +1,17 @@
 # Prettify JSON
 
-[TODO. There will be project description]
+Скрипт, который выводит json в консоль в читаемом виде
 
-# Quickstart
+## Требования
 
-[TODO]
+*Python3.5*
 
-Example of script launch on Linux, Python 3.5:
+## Пример запуска
 
-```bash
-
-$ python pprint_json.py <path to file>
-# TODO add output example
-
+```sh
+python pprint_json.py <path to file>
 ```
 
-# Project Goals
+## Project Goals
 
 The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
