@@ -22,8 +22,8 @@ def main():
     namespace = parser.parse_args()
     if not namespace.file or not namespace.file.lower().endswith('.json'):
         exit('Укажите путь к файлу. Формат файла должен быть json')
-    json_content = load_data(namespace.file)
-    print(pretty_print_json(json_content))
+    content_json_file = load_data(namespace.file)
+    print(pretty_print_json(content_json_file))
 
 
 if __name__ == '__main__':
