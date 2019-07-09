@@ -1,5 +1,11 @@
 import json
-import sys
+import argparse
+
+
+def create_parser():
+    parser = argparse.ArgumentParser(prefix_chars='-+/')
+    parser.add_argument('file', nargs='?', default=False, help='Path to json file')
+    return parser
 
 
 def load_data(filepath):
@@ -12,8 +18,11 @@ def pretty_print_json(json_content):
 
 
 def main():
-    filepath = sys.argv[1]
-    json_content = load_data(filepath)
+    parser = create_parser()
+    namespace = parser.parse_args()
+    if not namespace.file or not namespace.file.lower().endswith('.json'):
+        exit('Укажите путь к файлу. Формат файла должен быть json')
+    json_content = load_data(namespace.file)
     print(pretty_print_json(json_content))
 
 
