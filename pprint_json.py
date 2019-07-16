@@ -17,8 +17,8 @@ def create_parser():
     return parser
 
 
-def is_json(file_name):
-    return file_name.lower().endswith('.json')
+def is_json(filepath):
+    return filepath.lower().endswith('.json')
 
 
 def load_data(filepath):
