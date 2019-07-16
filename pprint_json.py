@@ -18,7 +18,8 @@ def create_parser():
 
 
 def is_json(filepath):
-    return filepath.lower().endswith('.json')
+    if filepath.lower().endswith('.json'):
+        return filepath
 
 
 def load_data(filepath):
