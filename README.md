@@ -16,12 +16,15 @@ python pprint_json.py <path to file>
 
 ```sh
 python pprint_json.py
-Укажите путь к файлу. Формат файла должен быть json
+usage: pprint_json.py [-h] file
+pprint_json.py: error: the following arguments are required: file
 ```
 
 ```sh
 python pprint_json.py file.txt
-Укажите путь к файлу. Формат файла должен быть json
+usage: pprint_json.py [-h] file
+pprint_json.py: error: argument file: invalid file format
+
 ```
 
 ```sh
